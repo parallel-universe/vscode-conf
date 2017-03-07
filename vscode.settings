@@ -1,0 +1,30 @@
+// Place your settings in this file to overwrite the default settings {
+    "editor.fontSize": 10,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.fontFamily": "Inconsolata",
+    "workbench.colorTheme": "Default High Contrast",
+    "window.zoomLevel": 4,
+    "eslint.enable": true,
+    "stylelint.enable": true,
+    "eslint.options": {
+        "rules": {
+            "comma-dangle": ["error", "always-multiline"],
+            "default-case": "off",
+            "react/display-name": "off",
+            "import/no-unresolved": "off",
+            "indent": ["error", 4],
+            "func-names": "off",
+            "global-require": "off",
+            "max-len": ["error", 120],
+            "no-param-reassign": ["error", { "props": false }],
+            "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+            // This one is to avoid complaining about invoking functions defined at the bottom of the file
+            // which is the preferred place to put private stuff as it"s better to have the public API of a module
+            // on top as it"s usually what you need to check to know how to use it
+            "no-use-before-define": ["error", "nofunc"],
+            "prefer-arrow-callback": "off",
+            "yoda": "off"
+        }
+    },
+    "workbench.statusBar.visible": false
+}
